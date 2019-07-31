@@ -1,0 +1,20 @@
+server:
+  port: 6001
+
+spring:
+  profiles:
+    active: user-service
+  datasource:
+    url: jdbc:mysql://47.102.213.220:3306/v18?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: jiang,111
+    driver-class-name: com.mysql.jdbc.Driver
+
+dubbo:
+  application:
+    name: user-service
+  registry:
+    protocol: zookeeper
+    address: 47.102.213.220:2181
+  protocol:
+    port: 28810

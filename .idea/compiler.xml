@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="v18-api" />
+        <module name="user-web" />
+        <module name="v18-common" />
+        <module name="v18-mapper" />
+        <module name="user-service" />
+        <module name="v18-entity" />
+        <module name="v18-service" />
+        <module name="v18-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="v18-base" target="1.5" />
+      <module name="v18base" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="user-service" options="-parameters" />
+      <module name="user-web" options="-parameters" />
+      <module name="v18-api" options="" />
+      <module name="v18-base" options="" />
+      <module name="v18-service" options="" />
+      <module name="v18-web" options="" />
+    </option>
+  </component>
+</project>
